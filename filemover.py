@@ -5,9 +5,9 @@ extensions = []
 
 # looking for to all files inside the script folder
 for filename in os.listdir():
-    # separando o nome do arquivo da extensão
+    # separating the file name from the extension
     name, ext = os.path.splitext(filename)
-    # adicionando extensão na lista, caso ela ainda não exista
+    # adding extension to the list if it doesn't already exist
     if ext not in extensions:
         extensions.append(ext)
 
